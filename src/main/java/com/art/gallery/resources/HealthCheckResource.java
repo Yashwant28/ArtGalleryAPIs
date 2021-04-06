@@ -16,7 +16,7 @@ public class HealthCheckResource {
     @Produces("application/json")
     public Response healthCheckTest(){
         StatusMessages statusMessages = new StatusMessages();
-        statusMessages.setMessage("Health Check Works!");
+        statusMessages.setMessage("Health Check Works!!");
         return Response.status(Response.Status.OK).entity(statusMessages).build();
     }
 
