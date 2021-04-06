@@ -14,7 +14,6 @@ public class HealthCheckResource {
     @GET
     @PermitAll
     @Produces("application/json")
-    @Path("/200")
     public Response healthCheckTest(){
         StatusMessages statusMessages = new StatusMessages();
         statusMessages.setMessage("Health Check Works!");
